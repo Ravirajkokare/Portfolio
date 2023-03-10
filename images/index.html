@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7235b2e4c0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#Project">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>    
+        </nav>
+        <div class="header-text">
+            <p>Java programmer</p>
+            <h1>Hi, I am <span>Raviraj Kokare</span><br> from PVG COET,Pune</h1>
+
+        </div>
+    </div>
+</div>
+<!-----------------about----------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About me</h1>
+                <p>I am hard working,technology enthusiast & honest
+                    engineering graduate specialised in Information 
+                    Technology engineering with an overall CGPA of 
+                    8.53 from PVG COET,Pune affiliated under SPPU.
+                     <p>Along with my degree, I completed Java,
+                    Python,C++,SQL training offered by the
+                    Spoken Tutorial Project,IIT Bombay.</p></p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Technical Skills')"> Technical Skills</p>
+                    <p class="tab-links" onclick="opentab('Other Skills')">Other Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Interest')">Interests</p>
+                </div>
+                <div class="tab-contents active-tab" id="Technical Skills">
+                    <ul>
+                        <li><span>Java Programmer</span><br>Proficiency in java programming</li>
+                        <li><span>OOP and DSA</span><br>Acquired knowledge of OOP and DSA</li>
+                        <li><span>C++ Programmer</span><br>Good knowledge of C++ programming</li>
+                        <li><span>Python Programmer</span><br>familiar with python programming</li>
+                        <li><span>HTML and CSS Programmer</span><br>with good knowledge can be able to build an web application</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Other Skills">
+                    <ul>
+                        <li><span>Hard Working</span><br>My journey is all full of hard work.I came from a<br>region which is not connected to other world.<br>
+                        There is no internet,no industrialization,no<br>opportunity to scale up in higher education.<br>But cope up with these situations I achieved
+                        small achievements and reached at you with this way.</li>
+                        <li><span>Very focused & Good observstion skills</span><br>As an artist it helps me to develope my observation,persistance,patience,sense of adventure,discipline
+                        while sketching and painting.</li>
+                        <li><span>Problem Solving Skills</span><br>I helped my family to scale up family business.<br>I had to solve variety of problems related to
+                        Mango<br>sales such as logistics,supply chain anad customer complaints and we had tackled these challenges<br> with best possible way.</li>
+                        <li><span>Communication Skills</span><br>From last 2 and a half years I am working on my<br>communication skills and by joining family business<br>had helped me to develope
+                        my communication skill, I had to maitain good relation with customers.<br>By the time I improved my communication skills</li>
+                        <li><span>Team Coordination</span><br>As a member of college cricket team I experienced<br>that team coordination is the only way to achieve<br>goal and I
+                        believed in team coordination.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>BE</span><br>BE from PVG COET,Pune(2022)</li>
+                        <li><span>HSC</span><br>HSC from MES Absaheb Garware College of Science(2018)</li>
+                        <li><span>SSC</span><br>SSC from SMG Highschool,Devgad(2016)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Interest">
+                    <ul>
+                        <li><span>Playing cricket</span><br>BE from PVG COET,Pune(2022)</li>
+                        <li><span>Sketching and Painting</span><br>HSC from MES Absaheb Garware College of Science(2018)</li>
+                        <li><span>Cooking</span><br>SSC from SMG Highschool,Devgad(2016)</li>
+                        <li><span>Watching movies</span><br>SSC from SMG Highschool,Devgad(2016)</li>
+                        <li><span>Travelling</span><br>SSC from SMG Highschool,Devgad(2016)</li>
+                    </ul>
+                </div> 
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!----------------work and achievements------------->
+<div id="Project">
+    <div class="container">
+        <h1 class="sub-title">My projects</h1>
+        <div class="Project-list">
+            <div>
+                
+                <i class="fa-solid fa-people-line"></i>
+                <h2>Personality Prediction</h2>
+                <p>Evaluating the applicant in numerous aspects by predicting individual personality.
+                Company will have better understanding of the applicant and will be able to make a 
+                more informed judgement about hiring the best candidate for the job.</p>
+                
+                <a href="#">Learn more</a>
+                <a href="images/Personality Prediction.pdf" download class="btn btn2">Download Research Paper</a>
+                <!--<a href="#">Learn more</a>-->
+                
+            </div>
+
+            <div>
+                <i class="fa-solid fa-hospital-user"></i>
+                <h2>Hospital Management</h2>
+                <p>This system will reduce the complexity of COVID care management.  
+                By using this system we can easily maintain all the records about hospitals and patients.
+                </p>
+                <a href="#">Learn more</a>
+        
+            </div>
+
+            <!--<div>
+                <h2>Web developement</h2>
+                <p></p>
+                <a href="#">learn more</a>
+            </div>
+            -->
+
+        </div>
+    </div>
+</div>
+
+<!--------------------------portfolio---------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>social Media app</h3>
+                    <p>It is very useful</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music app</h3>
+                    <p>It is very useful</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>fun app</h3>
+                    <p>It is very useful</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+<!-------------------------------contact------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> ravirajkokare2000@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i> 7397934959</p>
+                <div class="social-icons">
+                    <!--<a href= "mailto: ravirajkokare2000@gmail.com"</a>-->
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/resume.PDF" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <pp>Copyright @Raviraj <i class="fa-solid fa-heart"></i>.Made with by Interest</pp>
+    </div>
+
+
+</div>
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+         var sidemeu=document.getElementById("sidemenu");
+         function openmenu(){
+            sidemeu.style.right="50px";
+         }
+         function closemenu(){
+            sidemeu.style.right="-200px";
+         }
+         
+            
+
+</script>
+
+<script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyfVYhx9wgRJi-xHAaXjztA7eWVhHf7xVMueJKjBLvF5O112p6gZ-ezlBpCNQZGJfNt/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      
+</script>
+</body>
+</html>
